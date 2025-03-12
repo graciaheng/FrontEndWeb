@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start"> <!-- places back button at the top left hand corner -->
+      <ion-back-button></ion-back-button> <!-- back button -->
+    </ion-buttons>
+    <ion-title>leinstercounties</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">leinstercounties</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ul>
+    <li *ngFor="let x of counties"> <!-- calls the array list of counties-->
+      {{x}} <!-- needs to be inside li-->
+    </li>
+  </ul>
+</ion-content>
